@@ -15,17 +15,18 @@
 1. Download the latest NextCloudPi image
 2. Write the image to MicroSD card using Etcher
 3. Insert the MicroSD card to RaspberryPi
-4. Start Raspberry Pi
+4. Inser the external Hard drive in dock station and connect the dock station to RaspberryPi
+5. Start Raspberry Pi
   * this will boot RaspberryPi in command line, login with user default username/password, i,e Pi/raspberry
-5. Change the default password
+6. Change the default password
 ```
 passwd
 ```
-6. Enable SSH
+7. Enable SSH
 ```
 sudo raspi-config
 ```
-7. Connect to WiFi automatically when startup
+8. Connect to WiFi automatically when startup
 * update the file /etc/network/interfaces
 ```
 sudo nano /etc/network/interfaces
@@ -64,3 +65,21 @@ network={
   auth_alg=OPEN
 }
 ```
+9. Connect Nextcloud to WLAN run the below command and select nc-wifi
+```
+sudo nextcloudpi-config
+```
+10. At this step, Access nextcloud from another device connected to the same WiFi network. [More info](https://github.com/nextcloud/nextcloudpi/wiki/How-to-access-NextCloudPi)
+* Administration can be done via TUI (Terminal User Interface) or WebUI (Web User Interface)
+WebUI url: https://localIpAddress:4443
+* Default admin username/password is: ncp/ownyourbits
+* You can change the default credentials and create new admin user via TUI or WebUI
+* NextCloud users can access web ui: https://localIpAddress
+11. Connecting NextCloud from external
+* Use a Dynamic DNS provider like NoIP or FreeDNS [More info](https://github.com/nextcloud/nextcloudpi/wiki/How-to-access-from-outside-your-network)
+* For NoIp, follow the below steps:
+** Register with NoIP, create a free subdomain
+** Configure Port forward at Wifi Router. add new rule, select nextcloudpi device and external/internal port as 443
+** Install & Configure NoIP on nextcloud server [More info](https://ownyourbits.com/2017/03/05/dynamic-dns-for-raspbian-with-no-ip-org-installer/)
+12. check out [NextCloud apps](https://apps.nextcloud.com)
+13. checkout [NextCloud desktop/mobile clients](https://nextcloud.com/clients/)
