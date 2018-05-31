@@ -23,19 +23,20 @@ This document will provide instructions and related info which I have captured a
 5. Start Raspberry Pi
   * this will boot RaspberryPi in command line, login with user default username/password, i,e Pi/raspberry
 6. Change the default password
-```
+```console
 passwd
 ```
 7. Enable SSH
-```
+```console
 sudo raspi-config
 ```
 8. Connect to WiFi automatically when startup
 * update the file /etc/network/interfaces
-```
+```console
 sudo nano /etc/network/interfaces
 ```
-```
+
+```bash
 source-directory /etc/network/intefaces.d
 
 auto lo
@@ -52,10 +53,11 @@ iface wlan0 inet dhcp
 
 * update the file /etc/wpa_supplicant/wpa_supplicant.conf
 
-```
+```console
 sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
 ```
-```
+
+```bash
 coutry=GB
 ctrl_iterface=DIR=/var/run/wpa_supplicant GROUP=netdev
 update_config=1
@@ -70,7 +72,7 @@ network={
 }
 ```
 9. Connect Nextcloud to WLAN run the below command and select nc-wifi
-```
+```console
 sudo nextcloudpi-config
 ```
 10. At this step, Access nextcloud from another device connected to the same WiFi network. [More info](https://github.com/nextcloud/nextcloudpi/wiki/How-to-access-NextCloudPi)
