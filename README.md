@@ -32,6 +32,7 @@ sudo raspi-config
 ```
 8. Connect to WiFi automatically when startup
 * Modify the file /etc/network/interfaces, should look like below:
+
 ```bash
 source-directory /etc/network/intefaces.d
 
@@ -47,6 +48,7 @@ iface wlan0 inet dhcp
       wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
 ```
 * Modify the file /etc/wpa_supplicant/wpa_supplicant.conf, should look like below:
+
 ```bash
 coutry=GB
 ctrl_iterface=DIR=/var/run/wpa_supplicant GROUP=netdev
