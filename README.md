@@ -35,9 +35,6 @@ sudo raspi-config
 ```
 sudo nano /etc/network/interfaces
 ```
-
-the contents should look like below:
-
 ```
 source-directory /etc/network/intefaces.d
 
@@ -58,7 +55,6 @@ iface wlan0 inet dhcp
 ```
 sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
 ```
-... the contents should look like below:
 ```
 coutry=GB
 ctrl_iterface=DIR=/var/run/wpa_supplicant GROUP=netdev
