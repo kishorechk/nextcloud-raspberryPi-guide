@@ -35,7 +35,9 @@ sudo raspi-config
 ```
 sudo nano /etc/network/interfaces
 ```
+
 the contents should look like below:
+
 ```
 source-directory /etc/network/intefaces.d
 
@@ -50,7 +52,9 @@ auto wlan0
 iface wlan0 inet dhcp
       wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
 ```
+
 * update the file /etc/wpa_supplicant/wpa_supplicant.conf
+
 ```
 sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
 ```
