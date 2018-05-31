@@ -1,5 +1,9 @@
 # Setup a Next Cloud server on Raspberry Pi 3
 
+[Nextcloud](https://nextcloud.com) is an open source, self-hosted file share and communication platform. Access & sync your files, contacts, calendars & communicate and collaborate across your devices. You decide what happens with your data, where it is and who can access it! 
+
+This document will provide instructions and related info which I have captured as part of setting up my own NextCloud server. 
+
 ## Hardware Requirements:
 * Raspberry Pi 3 Model B+
 * MicroSD Card
@@ -77,9 +81,10 @@ WebUI url: https://localIpAddress:4443
 * NextCloud users can access web ui: https://localIpAddress
 11. Connecting NextCloud from external
 * Use a Dynamic DNS provider like NoIP or FreeDNS [More info](https://github.com/nextcloud/nextcloudpi/wiki/How-to-access-from-outside-your-network)
-* For NoIp, follow the below steps:
-** Register with NoIP, create a free subdomain
-** Configure Port forward at Wifi Router. add new rule, select nextcloudpi device and external/internal port as 443
-** Install & Configure NoIP on nextcloud server [More info](https://ownyourbits.com/2017/03/05/dynamic-dns-for-raspbian-with-no-ip-org-installer/)
-12. check out [NextCloud apps](https://apps.nextcloud.com)
-13. checkout [NextCloud desktop/mobile clients](https://nextcloud.com/clients/)
+12. For NoIp, follow the below steps
+* Register with [NoIP](https://www.noip.com), create a free subdomain
+* Configure Port forward at Wifi Router. Add new rule, select nextcloudpi device and external/internal port as 443
+* Install & Configure NoIP on nextcloud server [More info](https://ownyourbits.com/2017/03/05/dynamic-dns-for-raspbian-with-no-ip-org-installer/)
+13. Configuring external Hardrive [More infi](https://github.com/nextcloud/nextcloudpi/wiki/How-to-configure-an-external-USB-drive-with-NextCloudPi)
+13. check out [NextCloud apps](https://apps.nextcloud.com)
+14. checkout [NextCloud desktop/mobile clients](https://nextcloud.com/clients/)
