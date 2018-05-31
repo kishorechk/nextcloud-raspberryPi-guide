@@ -26,3 +26,41 @@ passwd
 sudo raspi-config
 ```
 7. Connect to WiFi automatically when startup
+.. update the file /etc/network/interfaces
+```
+sudo nano /etc/network/interfaces
+```
+.. the contents should look like below:
+```
+source-directory /etc/network/intefaces.d
+
+auto lo
+iface lo inet loopback
+
+iface eth0 inet dhcp
+
+allow-hotplug wlan0
+auto wlan0
+
+iface wlan0 inet dhcp
+      wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
+```
+.. update the file /etc/wpa_supplicant/wpa_supplicant.conf
+```
+sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
+```
+.. the contents should look like below:
+```
+coutry=GB
+ctrl_iterface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+
+network={
+  ssid="<wifi n/w name>"
+  psk="<wifi password>"
+  proto=RSM
+  key_mgmt=WPA-PSK
+  pairwise=CCMP
+  auth_alg=OPEN
+}
+```
