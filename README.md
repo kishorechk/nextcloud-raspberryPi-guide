@@ -86,5 +86,5 @@ WebUI url: https://localIpAddress:4443
 * Configure Port forward at Wifi Router. Add new rule, select nextcloudpi device and external/internal port as 443
 * Install & Configure NoIP on nextcloud server [More info](https://ownyourbits.com/2017/03/05/dynamic-dns-for-raspbian-with-no-ip-org-installer/)
 13. Configuring external Hardrive [More infi](https://github.com/nextcloud/nextcloudpi/wiki/How-to-configure-an-external-USB-drive-with-NextCloudPi)
-13. check out [NextCloud apps](https://apps.nextcloud.com)
-14. checkout [NextCloud desktop/mobile clients](https://nextcloud.com/clients/)
+14. check out [NextCloud apps](https://apps.nextcloud.com)
+15. checkout [NextCloud desktop/mobile clients](https://nextcloud.com/clients/)
