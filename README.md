@@ -16,7 +16,7 @@
 2. Write the image to MicroSD card using Etcher
 3. Insert the MicroSD card to RaspberryPi
 4. Start Raspberry Pi
-.. this will boot RaspberryPi in command line, login with user default username/password, i,e Pi/raspberry
+  * this will boot RaspberryPi in command line, login with user default username/password, i,e Pi/raspberry
 5. Change the default password
 ```
 passwd
@@ -26,11 +26,11 @@ passwd
 sudo raspi-config
 ```
 7. Connect to WiFi automatically when startup
-.. update the file /etc/network/interfaces
+* update the file /etc/network/interfaces
 ```
 sudo nano /etc/network/interfaces
 ```
-.. the contents should look like below:
+the contents should look like below:
 ```
 source-directory /etc/network/intefaces.d
 
@@ -45,11 +45,11 @@ auto wlan0
 iface wlan0 inet dhcp
       wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
 ```
-.. update the file /etc/wpa_supplicant/wpa_supplicant.conf
+* update the file /etc/wpa_supplicant/wpa_supplicant.conf
 ```
 sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
 ```
-.. the contents should look like below:
+... the contents should look like below:
 ```
 coutry=GB
 ctrl_iterface=DIR=/var/run/wpa_supplicant GROUP=netdev
