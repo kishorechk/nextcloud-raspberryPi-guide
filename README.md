@@ -50,9 +50,7 @@ auto wlan0
 iface wlan0 inet dhcp
       wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
 ```
-
 * update the file /etc/wpa_supplicant/wpa_supplicant.conf
-
 ```console
 sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
 ```
