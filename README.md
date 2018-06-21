@@ -82,3 +82,4 @@ WebUI url: https://localIpAddress:4443
 13. Configuring external Hardrive [More infi](https://github.com/nextcloud/nextcloudpi/wiki/How-to-configure-an-external-USB-drive-with-NextCloudPi)
 14. check out [NextCloud apps](https://apps.nextcloud.com)
 15. checkout [NextCloud desktop/mobile clients](https://nextcloud.com/clients/)
+16. [Nextcloud webinterface usermanual](https://docs.nextcloud.com/server/12/user_manual/webinterface.html)
